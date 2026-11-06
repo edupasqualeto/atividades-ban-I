@@ -1,0 +1,15 @@
+RestricoesAlimentares(#idRestricao, descricao)
+Pratos(#idPrato, nome, dificuldade)
+Alimentos(#idALimento, nome, unidadeMedida, caloriasPorUnidade, [&idCat])
+Nutrientes(#idNutriente, nome)
+Dietas(#idDieta, responsavelTecnico, nome)
+Categorias(#idCat, nome)
+
+intoleranceas(#&idRestricao, #&idAlimento)
+proibidos(#&idRestricao, #&idPrato)
+substituicao(#&idAlimentoSubstituto, #&idAlimentoSubstituido)
+composicao(#&idPrato, #&idAlimento, quantidade)
+conteudo nutricional(#&idPrato, #&idNutriente)
+menu pratos(#&idPrato, #&idDieta, #dia, horario)
+menu natural(#&idDieta, #&idAlimento, #dia, horario, instrucaoConsumo, qtd)
+

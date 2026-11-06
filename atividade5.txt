@@ -1,0 +1,14 @@
+---------------
+FALTA TERMINAR
+---------------
+
+Reservas(#Codigo, nomePass, prazoValidade, emitido)
+Trechos(#idTrecho)
+Aeroportos(#sigla, capacidade, nome)
+Cidades(#codCid, estado, pais, clima, nome)
+Assentos(#idAssento, classe)
+Voos(#codVoo, ciaAerea, &diaSemana)
+diaSemana(#&codVoo, #diaSemana)
+
+Escalas(#&Codigo, #&sigla)
+

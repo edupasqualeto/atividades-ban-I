@@ -1,0 +1,9 @@
+Pessoas(#codCliente, nome)
+Fisicas(#&codCliente, CPF)
+Juridicas(#&codCliente, CNPJ, razaoSocial)
+Produtos(#codProduto, nome, qtdDisponivel, peso, altura, largura
+profundidade, unidMedida, precoUnidCompra, precoUnidVenda)
+Empresas(#CNPJ, razaoSocial)
+
+Venda(#&codCliente, #&codProduto, #dtHoraEmissao, qtd)
+Compras(#&codProduto, #&CNPJ, #dtHoraEmissao, qtd, dtPrevEntrega)

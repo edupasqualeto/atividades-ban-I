@@ -1,0 +1,10 @@
+Fabricantes(#CNPJ, nome, rua, nro, bairro)
+Produtos(#numero, &CNPJ, nomeComercial, tipoEmbalagem, precoUnitario, qtdLote)
+Medicamentos(#&numeroP, tarja, formula)
+Perfumes(#&numeroP, sexo, intensidade)
+Vendas(#nroNota, data, nomeCliente, &emailsCliente)
+Receitas Medicas(#nrReceita, CRMMedico, data)
+emailsCliente(#&nroNota, #email)
+
+estetica(#&numeroP, #&nroNota, quantidade, imposto)
+Tratamentos(#&numero, #&nroNota, quantidade, imposto, [&nrReceita])

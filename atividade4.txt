@@ -1,0 +1,16 @@
+Clientes(#codInterno, nome, endereco)
+Fisicos(#&codInterno, cpf, dt_nasc, sexo)
+Juridicos(#&codInterno, cnpj)
+
+Veiculos(#placa, &codigoTipo, &codFilial, nrMotor, cor, kmAtual, chassi)
+Revisoes(#codRevisao, descricao, nome)
+Tipo Veiculo(#codigoTipo, tempoLimpeza, kmMediaDiaria)
+Passeio(#&codigoTipo, nPassageiros, tamanho, portas, &acessorios)
+Acessorios(#&codigoTipo, #acessorio)
+Carga(#&codigoTipo, cargaMax)
+Filial(#codFilial, nome)
+
+Reserva(#&codInterno, #&codigoTipo, &codFilialRetirada, &codFilialEntrega, #dtHoraRetirada, dtHoraEntrega)
+aluguel(&placa, #&codInterno, #&codigoTipo, #&dtHoraRetirada, CNH, dtVencimentoCNH, nomeMotorista)
+agendamento(#&placa, #&codRevisao, #dataHora)
+manutencao(#&codRevisao, #&codigoTipo)
