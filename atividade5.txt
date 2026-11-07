@@ -1,14 +1,14 @@
----------------
-FALTA TERMINAR
----------------
-
 Reservas(#Codigo, nomePass, prazoValidade, emitido)
 Trechos(#idTrecho)
-Aeroportos(#sigla, capacidade, nome)
+Aeroportos(#sigla, capacidade, nome, &codCid)
 Cidades(#codCid, estado, pais, clima, nome)
-Assentos(#idAssento, classe)
-Voos(#codVoo, ciaAerea, &diaSemana)
+Assentos(#idAssento, classe, &codAeronave)
+Aeronaves(#codAeronave, modelo, autorizacao, capacidade, ano)
+Voos(#codVoo, ciaAerea)
 diaSemana(#&codVoo, #diaSemana)
 
-Escalas(#&Codigo, #&sigla)
+Escalas(#&Codigo, #&sigla, [&idAssento])
+Itinerarios(#&idTrecho, #&codVoo, &codAeronave)
+origem(#&idTrecho, #&sigla, horaPartida)
+destino(#&idTrecho, #&sigla, horaChegada)
 

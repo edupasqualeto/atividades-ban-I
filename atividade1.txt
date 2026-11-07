@@ -1,6 +1,6 @@
 RestricoesAlimentares(#idRestricao, descricao)
 Pratos(#idPrato, nome, dificuldade)
-Alimentos(#idALimento, nome, unidadeMedida, caloriasPorUnidade, [&idCat])
+Alimentos(#idALimento, nome, unidadeMedida, caloriasPorUnidade, &idCat)
 Nutrientes(#idNutriente, nome)
 Dietas(#idDieta, responsavelTecnico, nome)
 Categorias(#idCat, nome)
